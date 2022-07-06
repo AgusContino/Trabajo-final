@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    background-color: rgb(66, 126, 128);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* HEADER Y NAVEGADOR - PORTADA */
+
+nav{
+    height: 100px;
+    padding-inline: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px
+}
+
+
+.logo-compu{ /*PROVISORIO*/
+    display: inline-block;
+    border: 2px solid red;
+    background-color: white;
+}
+
+.boton-nav{
+ text-decoration: none;
+ color: black;
+ background-color: rgb(240, 245, 228);
+ padding: 10px;
+ border-radius: 10px;
+ box-shadow: 3px 3px rgb(21, 68, 84);
+ margin-right: 50px;
+}
+.boton-nav:active{
+    box-shadow: none;
+    transform: translate(3px,3px);
+}
+
+.historia{
+    margin-left: auto;
+}
+
+h1{
+    background-color: rgb(45, 45, 45);
+    text-shadow: 6px 3px 2px black;
+    font-size: 50px;
+}
+
+#portada{
+    display: flex;
+    background: url(./imagenes/codigo.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* MAIN Y TARJETAS */
+
+h2{
+    text-align: center;
+    text-shadow: 4px 3px 2px black;
+    font-size: 40px;
+    color: rgb(240, 245, 228);
+    margin: 0%;
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+    height: 800px;
+    flex-direction: column;
+}
+
+section{
+    height: 500px;
+    width: 400px;
+    border: rgb(21, 68, 84) solid 5px;
+    background-color: rgb(240, 245, 228);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedorCards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h3{
+    margin-inline: 2px;
+}
+
+.cardpic{
+    width: 100%;
+}
+
+.card-link{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(240, 245, 228);
+    background-color: rgb(66, 126, 128);
+    width: 40%;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 15%;
+    box-shadow: 3px 3px rgb(21, 68, 84);
+}
+.card-link:active{
+    box-shadow: none;
+    transform: translate(3px,3px);
+}
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    height: 100px;
+    padding-inline: 50px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px
+}
+
+p{
+    text-align: center;
+}
+.footer-creditos{
+    margin-left: auto;
+}
