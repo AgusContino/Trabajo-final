@@ -4,7 +4,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* HEADER Y NAVEGADOR - PORTADA */
+/* GENERAL - header y navegador; portada */
 
 nav{
     height: 100px;
@@ -58,17 +58,17 @@ h1{
     color: white;
 }
 
-/* MAIN Y TARJETAS */
+/* INDEX - main y tarjetas */
 
 h2{
     text-align: center;
-    text-shadow: 4px 3px 2px black;
+    text-shadow: 4px 3px 2px rgb(43, 43, 43);
     font-size: 40px;
     color: rgb(240, 245, 228);
     margin: 0%;
 }
 
-main{
+#indexMain{
     display: flex;
     justify-content: space-evenly;
     height: 800px;
@@ -116,7 +116,7 @@ h3{
     transform: translate(3px,3px);
 }
 
-/* FOOTER */
+/* GENERAL - footer */
 
 footer{
     background-color: rgb(45, 45, 45);
@@ -135,4 +135,76 @@ p{
 }
 .footer-creditos{
     margin-left: auto;
+}
+
+/*HISTORIA - frantas de titulo-texto*/
+
+#historiaMain{
+    display: flex;
+    flex-direction: column;
+}
+
+.franjaHistoria{
+    padding: 50px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.franjaHistoria p{
+    width: 50%;
+    text-align: justify;
+}
+
+.franjaHistoria h2{
+    width: 50%;
+}
+
+/*HISTORIA - articulo y video*/
+
+#artVid{
+    margin: 100px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#containerVideo{
+    margin: 50px 0px 50px 0px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+#ctrlVideo{
+    height: 50px;
+    width: 98%;
+    background-color: rgb(49, 49, 49);
+    border-radius: 15px;
+    align-self: center;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px
+}
+
+#ctrlVideo p{
+    margin: 0px 15px 5px auto;
+    align-self: flex-end;
+    color: white;
+}
+
+.boton{
+    padding: 15px 30px 15px 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(240, 245, 228);
+    box-shadow: 2px 2px rgb(21, 68, 84)
+}
+.boton:active{
+    box-shadow: none;
+    transform: translate(2px,2px);
+}
+.play{
+    margin: 0px 0px 0px 10px;
 }
