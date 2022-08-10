@@ -16,29 +16,39 @@
             <a href="./juguemos.html" class="boton-nav">JUGUEMOS</a>
         </nav>
         <div id="portada">
-            <h1>PROGRAMACION E HISTORIA</h1>
+            <h1>JUGUEMOS UN POCO</h1>
         </div>
     </header>
 
-    <main>
+    <main id="juguemosMain">
 
-        <h2>CONTENIDO</h2>
+        <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
 
-        <div class="contenedorCards"> <!--¿Es aceptable que un div contenga sections en su interior?-->
- 
-            <section>
-            <img class="cardpic" src="./imagenes/img1.jpg" alt="fotografia en blanco y negro de una computadora antigua y su operadora">
-            <h3>Conozcamos un poco sobre la historia de la programacion</h3>
-            <a href="" class="card-link">Ir a historia</a>
-            </section>
+        <section id="drop-zone">
+            <div class="drop dropUno">
+                Arrastre y suelte una imagen aqui                
+            </div>
+            <div class="drop dropDos">
+                Arrastre y suelte una imagen aqui                
+            </div>
+            <div class="drop dropTres">
+                Arrastre y suelte una imagen aqui
+            </div>
+        </section>
 
-            <section>
-            <img class="cardpic" src="./imagenes/img2.jpg" alt="ilustracion de computadora, herramientas y lenguajes de programacion">
-            <h3>Juguemos un poco sobre la computacion</h3>
-            <a href="" class="card-link">Ir a juego</a>
-            </section>
+        <section id="drag-zone">
+            <div class="drag">
+                <img class="imgDrag dragUno" src="./imagenes/rompe2.png" alt="Primera pieza del juego de rompecabezas" draggable="true">
+            </div>
+            <div class="drag">
+                <img class="imgDrag dragDos" src="./imagenes/Rompe1.png" alt="Segunda pieza del juego de rompecabezas" draggable="true">
+            </div>
+            <div class="drag">
+                <img class="imgDrag dragTres" src="./imagenes/Rompe3.png" alt="Tercera pieza del juego de rompecabezas" draggable="true">
+            </div>
+        </section>
 
-        </div>
+        <button id="reinicio">Reiniciar juego</button>
 
     </main>
 
@@ -50,7 +60,7 @@
 
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="./scriptJuguemos.js"></script>
 
 </body>
 

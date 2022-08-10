@@ -75,7 +75,7 @@ h2{
     flex-direction: column;
 }
 
-section{
+#indexMain section{
     height: 500px;
     width: 400px;
     border: rgb(21, 68, 84) solid 5px;
@@ -207,4 +207,66 @@ p{
 }
 .play{
     margin: 0px 0px 0px 10px;
+}
+
+/*JUGUEMOS - drop zone y drag zone*/
+
+#juguemosMain{
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+#drop-zone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+#drop-zone img{
+    border: 3px solid white;
+    height: 500px;
+    width: 290px;
+}
+.drop{
+    background-color: gray;
+    border: 3px solid black;
+    height: 507px;
+    width: 296px;
+    text-align: center;
+}
+
+#drag-zone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+#drag-zone img{
+    border: 3px solid white;
+    height: 500px;
+    width: 290px;
+}
+.drag{
+    background-color: gray;
+    border: 3px solid black;
+    height: 507px;
+    width: 296px;
+}
+
+#reinicio{
+    padding: 15px 30px 15px 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(240, 245, 228);
+    box-shadow: 2px 2px rgb(21, 68, 84);
+    font-size: 18px;
+}
+#reinicio:active{
+    box-shadow: none;
+    transform: translate(2px,2px);
 }
