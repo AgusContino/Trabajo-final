@@ -15,13 +15,6 @@ nav{
     gap: 20px
 }
 
-
-.logo-compu{ /*PROVISORIO*/
-    display: inline-block;
-    border: 2px solid red;
-    background-color: white;
-}
-
 .boton-nav{
  text-decoration: none;
  color: black;
@@ -56,6 +49,36 @@ h1{
     align-items: center;
     justify-content: center;
     color: white;
+}
+
+svg{
+    transform: scale(1.3);
+    translate: 0px 8px;
+}
+
+#mon1,#tec1{
+    animation: animacionSVG;
+    animation-duration: 2s;
+}
+#mon2,#tec2{
+    visibility: hidden;
+    animation: animacionSVG;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animacionSVG{
+    0%{
+        translate: 0px -30px;
+        opacity: 0%;
+        visibility: visible;
+    }
+    100%{
+        translate: 0px 0px;
+        opacity: 100%;
+        visibility: visible;
+    }
 }
 
 /* INDEX - main y tarjetas */

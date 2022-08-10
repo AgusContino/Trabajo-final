@@ -1,4 +1,7 @@
 /* --------------- JUEGO ------------------*/
+/*Tuve que hacer esto en una pagina aparte porque
+si hacia todo el script junto me tiraba error*/
+
 let imgDrag = document.getElementsByClassName("imgDrag")
 let zoneDrop = document.getElementsByClassName("drop")
 
@@ -18,7 +21,6 @@ for (let i = 0; i < zoneDrop.length; i++) {
         evento.preventDefault()
     })
     zoneDrop[i].addEventListener("drop",()=>{
-        //console.log("drop:"+i)
         let piezaColocada=document.createElement("img")
     zoneDrop[i].textContent=""
     zoneDrop[i].appendChild(piezaColocada)
